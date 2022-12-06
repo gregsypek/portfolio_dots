@@ -72,6 +72,9 @@
   &--small {
     font-size: 1rem;
   }
+  &--black {
+color: var(--black-color);  }
+
 }
 
 .p-text {
@@ -129,8 +132,8 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: 18px;
+      height: 18px;
       color: var(--gray-color);
     }
 
