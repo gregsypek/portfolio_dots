@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
@@ -6,8 +6,22 @@ import "./Navbar.scss";
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
+	const [show, handleShow] = useState(false);
+
+	const transitionNavBar = () => {
+		if (window.scrollY > 100) {
+			handleShow(true);
+		} else {
+			handleShow(false);
+		}
+	};
+	useEffect(() => {
+		window.addEventListener("scroll", transitionNavBar);
+		return () => window.removeEventListener("scroll", transitionNavBar);
+	}, []);
+
 	return (
-		<nav className="app__navbar">
+		<nav className={`nav ${show && "app__navbar--white"} app__navbar`}>
 			<div className="app__navbar-logo">
 				<img src={images.logo} alt="logo" />
 			</div>

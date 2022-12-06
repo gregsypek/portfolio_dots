@@ -26,15 +26,28 @@ const Header = () => {
 			>
 				<div className="app__header-badge">
 					<div className="badge-cmp app__flex">
-						<span>👋 </span>
-						<div style={{ marginLeft: 20 }}>
-							<p className="p-text">Hello, I am</p>
-							<h1 className="head-text">Greg</h1>
+						{/* <span>👋 </span> */}
+						<div style={{ margin: "0 auto" }}>
+							<h1 className="head-text head-text--small">Web Developer</h1>
+							<p className="p-text p-text--center">Freelancer</p>
 						</div>
 					</div>
 					<div className="tag-cmp app__flex">
-						<p className="p-text">Web Developer</p>
-						<p className="p-text">Freelancer</p>
+						{/* <p className="p-text">Web Developer</p> */}
+						{/* <p className="p-text">Freelancer</p> */}
+						<p className="p-text p-text--center">
+							Hi my name is{" "}
+							<span
+								style={{ fontWeight: "bold", fontSize: 16, display: "block" }}
+							>
+								Grzegorz Sypek
+							</span>{" "}
+						</p>
+						<br />
+						<p className="p-text p-text--small">
+							I design and create web pages and build projects with attention to
+							clarity and details.
+						</p>
 					</div>
 				</div>
 			</motion.div>
@@ -57,7 +70,7 @@ const Header = () => {
 				whileInView={scaleVariants.whileInView}
 				className="app__header-circles"
 			>
-				{[images.flutter, images.redux, images.sass].map((circle, index) => (
+				{[images.vue, images.react, images.node].map((circle, index) => (
 					<div className="circle-cmp app__flex" key={`circle-${index}`}>
 						<img src={circle} alt="circle" />
 					</div>
