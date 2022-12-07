@@ -34,6 +34,9 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import bootstrap from "../assets/bootstrap.png";
+import vuetify from "../assets/vuetify.png";
+import nuxt from "../assets/nuxt.png";
 
 export default {
 	email,
@@ -69,4 +72,7 @@ export default {
 	nb,
 	skype,
 	spotify,
+	bootstrap,
+	vuetify,
+	nuxt,
 };
