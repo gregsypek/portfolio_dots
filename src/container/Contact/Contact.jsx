@@ -6,7 +6,7 @@ import { client } from "../../client";
 import "./Contact.scss";
 import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
 
-const Footer = () => {
+const Contact = () => {
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -39,15 +39,15 @@ const Footer = () => {
 	return (
 		<>
 			<h2 className="head-text">Drop me an email</h2>
-			<div className="app__footer-cards">
-				<div className="app__footer-card">
+			<div className="app__contact-cards">
+				<div className="app__contact-card">
 					{/* <img src={images.email} alt="email" /> */}
 					<FaMobileAlt />
 					<a href="mailto:greg.sypek@gmail.com" className="p-text">
 						greg.sypek@gmail.com
 					</a>
 				</div>
-				<div className="app__footer-card">
+				<div className="app__contact-card">
 					{/* <img src={images.mobile} alt="mobile" /> */}
 					<FaEnvelope />
 					<a href="tel:+48 123456789" className="p-text">
@@ -56,7 +56,7 @@ const Footer = () => {
 				</div>
 
 				{!isFormSubmitted ? (
-					<div className="app__footer-form app__flex">
+					<div className="app__contact-form app__flex">
 						<div className="app__flex">
 							<input
 								className="p-text"
@@ -103,7 +103,7 @@ const Footer = () => {
 };
 
 export default AppWrap(
-	MotionWrap(Footer, "app__footer"),
+	MotionWrap(Contact, "app__contact"),
 	"contact",
 	"app__whitebg"
 );

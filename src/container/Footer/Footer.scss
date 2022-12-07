@@ -1,0 +1,46 @@
+.app__footer {
+
+  background: url("../../assets/bgSML.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+margin-top: 5rem;
+  &__item {
+
+ margin: 5px;
+    background-color: white;
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+      justify-content: center;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    transition: all  0.3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--secondary-color) ;
+      color: white;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // &--secondary {
+    //   // margin-right: 10%;
+    //  transform: translateX(50px);
+    //  margin-top:-10px;
+    // }
+  }
+  p.p-text{
+margin:5rem 0 3rem 0;
+text-align: center;
+  }
+}
