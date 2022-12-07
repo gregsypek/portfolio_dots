@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
-import "./Footer.scss";
+import "./Contact.scss";
+import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
 	const [formData, setFormData] = useState({
@@ -37,16 +38,18 @@ const Footer = () => {
 	};
 	return (
 		<>
-			<h2 className="head-text">Take a coffe & chat with me</h2>
+			<h2 className="head-text">Drop me an email</h2>
 			<div className="app__footer-cards">
 				<div className="app__footer-card">
-					<img src={images.email} alt="email" />
+					{/* <img src={images.email} alt="email" /> */}
+					<FaMobileAlt />
 					<a href="mailto:greg.sypek@gmail.com" className="p-text">
 						greg.sypek@gmail.com
 					</a>
 				</div>
 				<div className="app__footer-card">
-					<img src={images.mobile} alt="mobile" />
+					{/* <img src={images.mobile} alt="mobile" /> */}
+					<FaEnvelope />
 					<a href="tel:+48 123456789" className="p-text">
 						123456789
 					</a>

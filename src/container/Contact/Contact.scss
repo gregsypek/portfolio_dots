@@ -27,14 +27,20 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    background-color: white;
+    border: 1px solid var(--primary-color);
 
     transition: all 0.3s ease-in-out;
 
-    img {
+    svg {
       width: 40px;
       height: 40px;
       margin: 0 0.7rem;
+      
+      
+          fill: var(--gray-color);
+     
+        
     }
 
     p {
