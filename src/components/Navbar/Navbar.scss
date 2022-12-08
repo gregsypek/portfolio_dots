@@ -58,18 +58,29 @@
     }
 
     a {
+      position: relative;
       color: var(--gray-color);
       text-decoration: none;
       flex-direction: column;
 
       text-transform: uppercase;
       font-weight: 500;
+    
 
       transition: all 0.3s ease-in-out;
 
-      &:hover {
-        color: var(--secondary-color);
+      &:hover::after {
+        content: url('../../assets/dot.svg');
+          
+                  position: absolute;
+                  top: -5px;
+                  width: 10px;
+                  right: -12px;
+                  // aspect-ratio: 1/1;
+                  // border-radius: 50%;
+          
       }
+    
     }
 
     &:hover {

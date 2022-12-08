@@ -14,7 +14,7 @@
   margin: 4rem 0 2rem;
 
   .app__work-filter-item {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.6rem;
     border-radius: 0.5rem;
     background-color: #fff;
     color: #000;
@@ -23,7 +23,12 @@ aspect-ratio: 1/1;
   border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0.2rem;
+    @media screen and (min-width: 600px) {
+    
+  padding: 0.5rem 1rem;
     margin: 0.5rem;
+      }
 
     &:hover {
       background-color: var(--secondary-color);
@@ -53,8 +58,8 @@ aspect-ratio: 1/1;
     width: 100%;
     flex-direction: column;
 
-    margin: 2rem;
-    padding: 1rem;
+    margin: 2rem 0;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: #fff;
     color: #000;
@@ -66,8 +71,14 @@ aspect-ratio: 1/1;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     }
 
+    @media screen and (min-width: 600px) {
+
+      padding: 1rem;
+      margin: 2rem;
+    }
     @media screen and (min-width: 800px) {
       width: 380px;
+    
     }
     @media screen and (min-width: 2000px) {
       width: 470px;
