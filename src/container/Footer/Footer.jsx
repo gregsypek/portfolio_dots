@@ -33,17 +33,13 @@ const Footer = () => {
 							</a>
 						</li>
 						<li className="footer__item">
-							<a href="#projects" className="footer__item footer__item--works">
-								Works
-							</a>
+							<a href="#projects">Works</a>
 						</li>
 						<li className="footer__item">
-							<a href="#home" className="footer__item footer__item--back-up">
-								Back up
-							</a>
+							<a href="#home">Back up</a>
 						</li>
 					</ul>
-					
+
 					<p className="p-text">
 						© <span className="year">{year}</span>&nbsp;Created by gregsypek
 					</p>

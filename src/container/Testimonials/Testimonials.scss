@@ -17,28 +17,33 @@
   transition: all 0.3s ease-in-out;
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
+      @media screen and (min-width: 800px) {
+          width: 100px;
+          height: 100px;
+      }
   }
 
-  @media screen and (min-width: 2000px) {
-    min-height: 450px;
-
-    img {
-      width: 150px;
-      height: 150px;
-    }
-  }
+     @media screen and (max-width: 600px) {
+       flex-direction: column;
+     }
 
   @media screen and (max-width: 850px) {
     width: 100%;
   }
 
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-  }
+
+     @media screen and (min-width: 2000px) {
+       min-height: 450px;
+  
+       img {
+         width: 150px;
+         height: 150px;
+       }
+     }
 }
 
 .app__testimonial-content {
@@ -53,11 +58,14 @@
   align-items: flex-start;
 
   p {
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
     color: var(--black-color);
     font-family: var(--font-base);
-
+  @media screen and (min-width: 800px) {
+  font-size: 1.25rem;
+    line-height: 2rem;
+    }
     @media screen and (min-width: 2000px) {
       font-size: 2rem;
       line-height: 3.5rem;
