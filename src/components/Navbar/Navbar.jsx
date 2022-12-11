@@ -9,7 +9,7 @@ const Navbar = () => {
 	const [show, handleShow] = useState(false);
 
 	const transitionNavBar = () => {
-		if (window.scrollY > 100) {
+		if (window.scrollY > 30) {
 			handleShow(true);
 		} else {
 			handleShow(false);
