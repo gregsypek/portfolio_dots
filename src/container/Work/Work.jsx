@@ -17,6 +17,7 @@ const Work = () => {
 		const query = '*[_type=="works"]';
 
 		client.fetch(query).then((data) => {
+			// console.log("🚀 ~ file: Work.jsx:20 ~ client.fetch ~ data:", data);
 			setWorks(data);
 			setFilterWork(data);
 		});
@@ -40,10 +41,14 @@ const Work = () => {
 			<h2 className="head-text head-text--black">
 				My <span>Websites </span> & <span> Apps</span>
 			</h2>
+
 			<div className="app__work-filter">
 				{[
-					"Vue",
+					"JavaScript",
+					"React",
 					"Node",
+					"Redux",
+					"Vue",
 					"Nuxt",
 					"Next",
 					"Vuex",
@@ -51,11 +56,20 @@ const Work = () => {
 					"Scss",
 					"Vuetify",
 					"Tailwind",
-					"JavaScript",
-					"React",
-					"Redux",
-					"All",
 				].map((item, index) => (
+					<div
+						key={index}
+						onClick={() => handleWorkFilter(item)}
+						className={`app__work-filter-item app__flex p-text ${
+							activeFilter === item ? "item-active" : ""
+						}`}
+					>
+						{item}
+					</div>
+				))}
+			</div>
+			<div className="app__work-filter app__work-filter--years">
+				{["2023", "2022", "2021", "All"].map((item, index) => (
 					<div
 						key={index}
 						onClick={() => handleWorkFilter(item)}

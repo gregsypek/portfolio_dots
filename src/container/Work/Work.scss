@@ -4,22 +4,26 @@
   flex-direction: column;
 }
 
+
+
 .app__work-filter {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   margin: 4rem 0 2rem;
-
+  &--years {
+  margin:0
+}
+ 
   .app__work-filter-item {
     padding: 0.2rem 0.6rem;
     border-radius: 0.5rem;
     background-color: #fff;
     color: #000;
     font-weight: 800;
-aspect-ratio: 1/1;
+    aspect-ratio: 1/1;
   border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
