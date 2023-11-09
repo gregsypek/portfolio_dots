@@ -38,7 +38,7 @@ import bootstrap from "../assets/bootstrap.png";
 import vuetify from "../assets/vuetify.png";
 import nuxt from "../assets/nuxt.png";
 
-export default {
+const resources = {
 	email,
 	mobile,
 	api,
@@ -76,3 +76,4 @@ export default {
 	vuetify,
 	nuxt,
 };
+export default resources;
