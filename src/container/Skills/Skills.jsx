@@ -16,7 +16,7 @@ const Skills = () => {
 
 		client.fetch(query).then((data) => {
 			console.log("🚀 ~ file: Skills.jsx:18 ~ client.fetch ~ data:", data);
-			setExperiences(data);
+			setExperiences(data.sort((a, b) => b.year - a.year));
 		});
 
 		client.fetch(skillsQuery).then((data) => {

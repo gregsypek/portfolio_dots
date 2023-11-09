@@ -18,7 +18,7 @@ const Work = () => {
 
 		client.fetch(query).then((data) => {
 			console.log("🚀 ~ file: Work.jsx:20 ~ client.fetch ~ data:", data);
-			setWorks(data);
+			setWorks(data.sort((a, b) => a.id - b.id));
 			setFilterWork(data);
 		});
 	}, []);

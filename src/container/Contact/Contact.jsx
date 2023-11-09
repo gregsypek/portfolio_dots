@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { images } from "../../constants";
+// import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Contact.scss";
