@@ -44,6 +44,7 @@ const Work = () => {
 
 			<div className="app__work-filter">
 				{[
+					"All",
 					"JavaScript",
 					"React",
 					"Node",
@@ -51,12 +52,9 @@ const Work = () => {
 					"Vue",
 					"Nuxt",
 					"Next",
-					"Vuex",
-					"Bootstrap",
-					"Scss",
-					"Vuetify",
-					"Tailwind",
-					"All",
+					"2023",
+					"2022",
+					"2021",
 				].map((item, index) => (
 					<div
 						key={index}
@@ -69,7 +67,7 @@ const Work = () => {
 					</div>
 				))}
 			</div>
-			<div className="app__work-filter app__work-filter--years">
+			{/* <div className="app__work-filter app__work-filter--years">
 				{["2023", "2022", "2021"].map((item, index) => (
 					<div
 						key={index}
@@ -81,7 +79,7 @@ const Work = () => {
 						{item}
 					</div>
 				))}
-			</div>
+			</div> */}
 			<motion.div
 				animate={animateCard}
 				transition={{ duration: 0.5, delayChildren: 0.5 }}
