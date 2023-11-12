@@ -44,10 +44,12 @@
     border-top-right-radius: 10px;
     padding-block:10px;
     padding-inline: 15px;
-    margin-top:-5rem;
+
     gap:2rem;
     display:flex;
-    
+      @media (min-width: 680px) {
+        margin-top: -5rem;
+        }
     button {
       position:relative;
       z-index: 1;
