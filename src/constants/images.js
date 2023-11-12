@@ -26,6 +26,10 @@ import about04 from "../assets/about04.png";
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.png";
 import logo from "../assets/logo.svg";
+import ArrowLeft from "../assets/11.svg";
+import ArrowRigth from "../assets/12.svg";
+import ViewIcon from "../assets/13.svg";
+import GithubIcon from "../assets/14.svg";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -39,6 +43,10 @@ import vuetify from "../assets/vuetify.png";
 import nuxt from "../assets/nuxt.png";
 
 const resources = {
+	ArrowLeft,
+	ArrowRigth,
+	ViewIcon,
+	GithubIcon,
 	email,
 	mobile,
 	api,
