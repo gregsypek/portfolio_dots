@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { AiFillEye } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { client, urlFor } from "../../client";
@@ -89,7 +89,15 @@ const Work = () => {
 					return (
 						<div className="app__work-item app__flex" key={index}>
 							<div className="app__work-img app__flex">
-								<img src={urlFor(work.imgUrl)} alt={work.name} />
+								{work &&
+									work.imgUrls &&
+									work.imgUrls.length > 0 &&
+									work.imgUrls[0] && (
+										<img
+											src={urlFor(work.imgUrls[0]).url()} // Wyświetl tylko pierwsze zdjęcie
+											alt={`First project screenshot`}
+										/>
+									)}
 								{/* staggerChildren means show one after another
 								 */}
 								<motion.div

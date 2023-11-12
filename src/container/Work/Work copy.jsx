@@ -92,9 +92,12 @@ const Work = () => {
 					return (
 						<div className="app__work-item app__flex" key={index}>
 							<div className="app__work-img app__flex">
-								<img src={urlFor(work.imgUrl)} alt={work.name} />
-								{/* staggerChildren means show one after another
-								 */}
+								{work.imgUrls.length > 0 && work.imgUrls[0] && (
+									<img
+										src={urlFor(work.imgUrls[0]).url()}
+										alt={`First Project hero section`}
+									/>
+								)}
 								<motion.div
 									whileHover={{ opacity: [0, 1] }}
 									transition={{

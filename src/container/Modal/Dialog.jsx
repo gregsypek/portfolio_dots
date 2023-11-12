@@ -1,12 +1,27 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useEffect } from "react";
-import { motion } from "framer-motion";
+import { Fragment, useEffect, useState } from "react";
+// import { motion } from "framer-motion";
 
 import "./Dialog.scss";
 import { images } from "../../constants";
 import { urlFor } from "../../client";
+
 // import { images } from "../../constants";
 function MyDialog({ project, onClose, isModalOpen }) {
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+	const handleNext = () => {
+		setCurrentImageIndex(
+			(prevIndex) => (prevIndex + 1) % project.imgUrls.length
+		);
+	};
+
+	const handlePrev = () => {
+		setCurrentImageIndex(
+			(prevIndex) =>
+				(prevIndex - 1 + project.imgUrls.length) % project.imgUrls.length
+		);
+	};
 	useEffect(() => {
 		const handleKeyDown = (event) => {
 			if (event.key === "Escape" && isModalOpen) {
@@ -20,6 +35,9 @@ function MyDialog({ project, onClose, isModalOpen }) {
 			window.removeEventListener("keydown", handleKeyDown);
 		};
 	}, [isModalOpen, onClose]);
+
+	const isSingleImage = project.imgUrls.length <= 1;
+
 	return (
 		<Transition.Root show={isModalOpen} as={Fragment}>
 			<Dialog
@@ -37,8 +55,7 @@ function MyDialog({ project, onClose, isModalOpen }) {
 						{/* <div className="dialog__icons--project"> */}
 						<div className="dialog__links">
 							<a
-								// href={props.liveLink}
-								href={"/#"}
+								href={`${project.projectLink}`}
 								target="_blank"
 								rel="noreferrer"
 								className="dialog__icon"
@@ -46,8 +63,7 @@ function MyDialog({ project, onClose, isModalOpen }) {
 								<img src={images.ViewIcon} alt="view" className="icon" />
 							</a>
 							<a
-								// href={props.gitLink}
-								href={"/#"}
+								href={`${project.codeLink}`}
 								target="_blank"
 								rel="noreferrer"
 								className="dialog__icon"
@@ -60,28 +76,26 @@ function MyDialog({ project, onClose, isModalOpen }) {
 							</a>
 						</div>
 
-						<button
-							className="dialog__icon close"
-							data-move-next
-							// onClick={props.nextImage}
-							onClick={onClose}
-						>
+						<button className="dialog__icon" data-move-next onClick={onClose}>
 							<img src={images.CloseIcon} alt="arrow right" className="icon" />
 						</button>
-						{/* </div> */}
 					</div>
 
 					<div className="dialog__body">
 						<div className="dialog__body-img">
-							<img src={urlFor(project.imgUrl)} alt={project.name} />
+							{/* <img src={urlFor(project.imgUrl)} alt={project.name} /> */}
+							<img
+								src={urlFor(project.imgUrls[currentImageIndex]).url()}
+								alt={`Screenshot ${currentImageIndex + 1}`}
+							/>
 						</div>
 					</div>
 					<div className="dialog__directions">
 						<button
 							className="dialog__icon "
 							data-move-prev
-							// onClick={props.prevImage}
-							onClick={() => {}}
+							onClick={handleNext}
+							disabled={isSingleImage}
 						>
 							<img src={images.ArrowLeft} alt="arrow left" className="icon" />
 						</button>
@@ -89,8 +103,8 @@ function MyDialog({ project, onClose, isModalOpen }) {
 						<button
 							className="dialog__icon"
 							data-move-next
-							// onClick={props.nextImage}
-							onClick={() => {}}
+							onClick={handlePrev}
+							disabled={isSingleImage}
 						>
 							<img src={images.ArrowRigth} alt="arrow right" className="icon" />
 						</button>
