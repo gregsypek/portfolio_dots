@@ -83,13 +83,12 @@ function MyDialog({ project, onClose, isModalOpen }) {
 						<div className="dialog__body-img">
 							<img src={urlFor(project.imgUrl)} alt={project.name} />
 						</div>
-
-						<div className="dialog__body-desc">
-							<h4 className="bold-text">{project.title}</h4>
-							<p className="p-text" style={{ marginTop: 10 }}>
-								{project.description}
-							</p>
-						</div>
+					</div>
+					<div className="dialog__desc">
+						<h4 className="bold-text">{project.title}</h4>
+						<p className="p-text" style={{ marginTop: 10 }}>
+							{project.description}
+						</p>
 					</div>
 				</div>
 			</Dialog>
