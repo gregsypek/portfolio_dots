@@ -33,9 +33,52 @@ function MyDialog({ project, onClose, isModalOpen }) {
 					onClick={onClose}
 				></div>
 				<div className="dialog__content">
-					<div className="projects__icons">
+					<div className="dialog__icons">
+						{/* <div className="dialog__icons--project"> */}
+						<div className="dialog__links">
+							<a
+								// href={props.liveLink}
+								href={"/#"}
+								target="_blank"
+								rel="noreferrer"
+								className="dialog__icon"
+							>
+								<img src={images.ViewIcon} alt="view" className="icon" />
+							</a>
+							<a
+								// href={props.gitLink}
+								href={"/#"}
+								target="_blank"
+								rel="noreferrer"
+								className="dialog__icon"
+							>
+								<img
+									src={images.GithubIcon}
+									alt="arrow view"
+									className="icon"
+								/>
+							</a>
+						</div>
+
 						<button
-							className="projects__icon projects__icon--move left--4"
+							className="dialog__icon close"
+							data-move-next
+							// onClick={props.nextImage}
+							onClick={onClose}
+						>
+							<img src={images.CloseIcon} alt="arrow right" className="icon" />
+						</button>
+						{/* </div> */}
+					</div>
+
+					<div className="dialog__body">
+						<div className="dialog__body-img">
+							<img src={urlFor(project.imgUrl)} alt={project.name} />
+						</div>
+					</div>
+					<div className="dialog__directions">
+						<button
+							className="dialog__icon "
 							data-move-prev
 							// onClick={props.prevImage}
 							onClick={() => {}}
@@ -44,45 +87,13 @@ function MyDialog({ project, onClose, isModalOpen }) {
 						</button>
 
 						<button
-							className="projects__icon projects__icon--move right--4"
+							className="dialog__icon"
 							data-move-next
 							// onClick={props.nextImage}
 							onClick={() => {}}
 						>
 							<img src={images.ArrowRigth} alt="arrow right" className="icon" />
 						</button>
-
-						<a
-							// href={props.liveLink}
-							href={"/#"}
-							target="_blank"
-							rel="noreferrer"
-							className="projects__icon projects__icon--view"
-						>
-							<img src={images.ViewIcon} alt="view" className="icon" />
-						</a>
-						<a
-							// href={props.gitLink}
-							href={"/#"}
-							target="_blank"
-							rel="noreferrer"
-							className="projects__icon projects__icon--github"
-						>
-							<img src={images.GithubIcon} alt="arrow view" className="icon" />
-						</a>
-						<button
-							onClick={onClose}
-							data-close-button="true"
-							className="close"
-						>
-							Close
-						</button>
-					</div>
-
-					<div className="dialog__body">
-						<div className="dialog__body-img">
-							<img src={urlFor(project.imgUrl)} alt={project.name} />
-						</div>
 					</div>
 					<div className="dialog__desc">
 						<h4 className="bold-text">{project.title}</h4>

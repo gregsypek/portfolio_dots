@@ -28,6 +28,7 @@ import circle from "../assets/circle.png";
 import logo from "../assets/logo.svg";
 import ArrowLeft from "../assets/11.svg";
 import ArrowRigth from "../assets/12.svg";
+import CloseIcon from "../assets/x.svg";
 import ViewIcon from "../assets/13.svg";
 import GithubIcon from "../assets/14.svg";
 
@@ -43,6 +44,7 @@ import vuetify from "../assets/vuetify.png";
 import nuxt from "../assets/nuxt.png";
 
 const resources = {
+	CloseIcon,
 	ArrowLeft,
 	ArrowRigth,
 	ViewIcon,
