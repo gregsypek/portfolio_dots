@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import "./Dialog.scss";
 import { images } from "../../constants";
 import { urlFor } from "../../client";
-
+// import { images } from "../../constants";
 function MyDialog({ project, onClose, isModalOpen }) {
 	useEffect(() => {
 		const handleKeyDown = (event) => {
@@ -24,7 +24,7 @@ function MyDialog({ project, onClose, isModalOpen }) {
 		<Transition.Root show={isModalOpen} as={Fragment}>
 			<Dialog
 				as="div"
-				className="custom-dialog"
+				className="custom__dialog"
 				onClose={() => onClose} //it doesn't work here (no invoke) but has to be in Dialog I mean 'onClose' tag
 			>
 				<div
@@ -32,25 +32,65 @@ function MyDialog({ project, onClose, isModalOpen }) {
 					data-close-button="true"
 					onClick={onClose}
 				></div>
-				<div className="dialog-content">
-					{/* Dialog content */}
-					<div className="app__work-item app__flex">
-						<div className="app__work-img app__flex">
+				<div className="dialog__content">
+					<div className="projects__icons">
+						<button
+							className="projects__icon projects__icon--move left--4"
+							data-move-prev
+							// onClick={props.prevImage}
+							onClick={() => {}}
+						>
+							<img src={images.ArrowLeft} alt="arrow left" className="icon" />
+						</button>
+
+						<button
+							className="projects__icon projects__icon--move right--4"
+							data-move-next
+							// onClick={props.nextImage}
+							onClick={() => {}}
+						>
+							<img src={images.ArrowRigth} alt="arrow right" className="icon" />
+						</button>
+
+						<a
+							// href={props.liveLink}
+							href={"/#"}
+							target="_blank"
+							rel="noreferrer"
+							className="projects__icon projects__icon--view"
+						>
+							<img src={images.ViewIcon} alt="view" className="icon" />
+						</a>
+						<a
+							// href={props.gitLink}
+							href={"/#"}
+							target="_blank"
+							rel="noreferrer"
+							className="projects__icon projects__icon--github"
+						>
+							<img src={images.GithubIcon} alt="arrow view" className="icon" />
+						</a>
+						<button
+							onClick={onClose}
+							data-close-button="true"
+							className="close"
+						>
+							Close
+						</button>
+					</div>
+
+					<div className="dialog__body">
+						<div className="dialog__body-img">
 							<img src={urlFor(project.imgUrl)} alt={project.name} />
 						</div>
-						<div className="app__work-content app__flex">
+
+						<div className="dialog__body-desc">
 							<h4 className="bold-text">{project.title}</h4>
 							<p className="p-text" style={{ marginTop: 10 }}>
 								{project.description}
 							</p>
-							<div className="app__work-tag app__flex">
-								<p className="p-text">{project.tags[0]}</p>
-							</div>
 						</div>
-					</div>{" "}
-					<button onClick={onClose} data-close-button="true">
-						Close
-					</button>
+					</div>
 				</div>
 			</Dialog>
 		</Transition.Root>
