@@ -28,16 +28,18 @@ const About = () => {
 							whileInView={{ opacity: 1 }}
 							whileHover={{ scale: 1.1 }}
 							transition={{ duration: 0.5, type: "tween" }}
-							className="app__profile-item"
+							className={`app__profile-item item-${index+1}`}
 							key={about.title + index}
-						>
-							<img src={urlFor(about.imgUrl)} alt={about.title} />
+						>			 <div className="about__image" > 
+							{/* <img src={urlFor(about.imgUrl)} alt={about.title} style={{opacity:0}}/> */}
+							<img src={urlFor(about.imgUrl)} alt={about.title} style={{opacity:0}}/>
 							<h2 className="bold-text" style={{ marginTop: 20 }}>
 								{about.title}
 							</h2>
 							<p className="p-text" style={{ marginTop: 10 }}>
 								{about.description}
 							</p>
+							</div>
 						</motion.div>
 					);
 				})}

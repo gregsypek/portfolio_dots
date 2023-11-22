@@ -1,15 +1,19 @@
 .app {
-  background-color: var(--primary-color);
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(5, 22, 39, 0.9), rgba(4, 8, 14, 0.8), rgb(1, 5, 0.9), rgb(41, 32, 27), rgba(32, 26, 23, 0.8));
+      background-size: cover;
   font-family: var(--font-base);
-  // overflow-x: hidden;
 }
 
 .app__whitebg {
-  background-color: var(--white-color);
+ 
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(5, 22, 39, 0.9), rgba(4, 8, 14, 0.8), rgb(1, 5, 0.9), rgb(41, 32, 27), rgba(32, 26, 23, 0.8));
+    background-size: cover;
+  
 }
 
 .app__primarybg {
-  background-color: var(--primary-color);
+  background: linear-gradient(rgba(32, 26, 23, 0.8), rgb(41, 32, 27), rgb(1, 5, 0.9), rgba(4, 8, 14, 0.8), rgba(5, 22, 39, 0.9), rgba(0, 0, 0, 1));
+    background-size: cover;
 }
 
 .app__container {
@@ -56,7 +60,8 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--white-color);
+  color: #E7DBDD;
   text-transform: capitalize;
 
   span {
@@ -80,9 +85,9 @@ color: var(--black-color);  }
 }
 
 .p-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
-  color: var(--gray-color);
+  color: var(--white-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {

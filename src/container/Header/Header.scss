@@ -1,6 +1,6 @@
 #home {
 	position: relative;
-	background: url("../../assets/bgIMG.png");
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../../assets/bgIMG.png') no-repeat center center fixed;
 	background-size: cover;
 	background-position: center;
 	background-repeat: repeat;
@@ -68,11 +68,15 @@
 	.badge-cmp,
 	.tag-cmp {
 		padding: 0.3rem 1rem;
-		background: var(--white-color);
+		background: linear-gradient(rgba(2, 6, 10, 0.8), rgba(2, 6, 10, 0.8)), url('../../assets/planet.png') no-repeat center center fixed;
+	
+		background-repeat: no-repeat;
+		object-fit: contain;
 		border-radius: 50%;
 		aspect-ratio: 1/1;
 		flex-direction: row;
 		width: auto;
+
 
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 		@media screen and (min-width: 600px) {
@@ -93,6 +97,7 @@
 			width: 100%;
 			text-transform: uppercase;
 			text-align: center;
+					color: white;
 		}
 	}
 
@@ -124,9 +129,8 @@
 		height: 50px;
 		border-radius: 50%;
 
-		// background: var(--white-color);
 		background: transparent;
-		background: var(--primary-color);
+		background: linear-gradient(rgba(2, 6, 10, 0.8), rgba(8, 21, 28, 0.8), rgba(2, 6, 10, 0.8)), url('../../assets/planet.png') no-repeat center center fixed;
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 		@media screen and (min-width: 1200px) {
 			width: 100px;
