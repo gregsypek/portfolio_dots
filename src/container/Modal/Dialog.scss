@@ -21,7 +21,9 @@
 		position: fixed;
 		display: flex;
 		inset: 0;
-		backdrop-filter: blur(6px);
+		backdrop-filter: blur(2px);
+		background:black;
+		// opacity: 0.3;
 		z-index: 9;
 		cursor: pointer;
 	}
@@ -126,7 +128,8 @@
 		justify-content: center;
 
 		text-align: center;
-		background-color: #fff;
+		// background-color: #fff;
+		background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/image-mars.png') no-repeat top center ;
 		border-radius: 0.5rem;
 
 		z-index: 10;
@@ -173,7 +176,7 @@
 		}
 	}
 	.dialog__desc {
-		background-color: rgba(255, 255, 255, 1);
+		background-color: black;
 		border-radius: 10px;
 		text-align: center;
 		width: 100%;
