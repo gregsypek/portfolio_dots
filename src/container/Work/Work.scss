@@ -170,6 +170,11 @@ border-radius: 50px;
       margin-top: 3rem;
     }
   }
+  p.desc{
+    padding: 10px;
+    background: rgba(2, 5, 13, 0.391);
+    border-radius: 15px;
+  }
 
   .app__work-tag {
     position: absolute;
@@ -181,6 +186,7 @@ border-radius: 50px;
     p {
       
       color:black;
+      
     }
   }
 }

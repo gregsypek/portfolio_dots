@@ -129,8 +129,10 @@
 
 		text-align: center;
 		// background-color: #fff;
-		background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/image-mars.png') no-repeat top center ;
+		background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/image-mars.png') no-repeat center center ;
 		border-radius: 0.5rem;
+		background-size: 20%;
+		background-position: 28% left;
 
 		z-index: 10;
 		@media (min-width: 580px) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { MotionWrap } from "../../wrapper";
+// import { MotionWrap } from "../../wrapper";
 import "./Footer.scss";
 
 const Footer = () => {

@@ -116,14 +116,20 @@
       font-family: var(--font-base);
       color: var(--white-color);
       outline: none;  
+      &:hover {
+        border-color: skyblue;
+       }
     }
 
     textarea {
       height: 170px;
+      &:hover {
+        border-color: skyblue;
+       }
     }
 
     &:hover {
-      box-shadow: 0 0 5px var(--primary-color);
+     border-color: skyblue;
     }
   }
 
@@ -131,10 +137,10 @@
     padding: 1rem 2rem;
     border-radius: 10px;
     border: none;
-    background-color: #ab9284;
+    background-color: #25414C;
 
     font-weight: 500;
-    color: black;
+    color: var(--white-color);
     outline: none;
     margin: 2rem 0 0 0;
     font-family: var(--font-base);
@@ -143,8 +149,8 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #674836;
-      color:white;
+      background-color: #1e323a;
+
     }
   }
 

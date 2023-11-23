@@ -1,51 +1,50 @@
 .app__footer {
-
-  background: linear-gradient(rgba(0, 2, 1, 0.9), rgba(0, 0, 0, 0.8)), url('../../assets/background-stars.jpg') no-repeat top center ;
-  background-size: cover;
-  background-repeat: no-repeat;
+	background: linear-gradient(rgba(0, 2, 1, 0.9), rgba(0, 0, 0, 0.8)),
+		url("../../assets/background-stars.jpg") no-repeat top center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.footer { background: linear-gradient(rgba(0, 2, 1, 0.9), rgba(0, 0, 0, 0.8)), url('../../assets/background-stars.jpg') no-repeat top center ;
-  background-size: cover;
-  background-repeat: no-repeat;
-padding-top: 5rem;
-  &__item {
-font-size: .9rem;
- margin: 5px;
-    width: 75px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-      justify-content: center;
-      border: 1px solid var(--primary-color);
-    a{
-      text-decoration: none;
-      // color: inherit;
-      color:var(--white-color);
-    }
-    &:hover,
-    &:visited {
-      cursor: pointer;
-      color: var(--secondary-color);
-      box-shadow: 0 0 7px 4px rgba(255, 255, 255, 0.4);
-
-    }
-    &:active {
-    
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      color: white;
-    }
-  }
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-  }
-  p.p-text{
-margin:5rem 0 3rem 0;
-text-align: center;
-  }
+.footer {
+	background: linear-gradient(rgba(0, 2, 1, 0.9), rgba(0, 0, 0, 0.8)),
+		url("../../assets/background-stars.jpg") no-repeat top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 5rem;
+	&__item {
+		font-size: 0.9rem;
+		margin: 5px;
+		width: 75px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--primary-color);
+		a {
+			text-decoration: none;
+			// color: inherit;
+			color: var(--white-color);
+		}
+		&:hover,
+		&:visited {
+			cursor: pointer;
+			color: var(--secondary-color);
+			box-shadow: 0 0 7px 4px rgba(255, 255, 255, 0.4);
+		}
+		&:active {
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+			color: white;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	p.p-text {
+		margin: 5rem 0 3rem 0;
+		text-align: center;
+	}
 }
