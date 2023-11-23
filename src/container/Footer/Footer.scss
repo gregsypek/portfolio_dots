@@ -1,16 +1,17 @@
 .app__footer {
 
-  background: url("../../assets/bgSML.png");
+  background: linear-gradient(rgba(0, 2, 1, 0.9), rgba(0, 0, 0, 0.8)), url('../../assets/background-stars.jpg') no-repeat top center ;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.footer {
-margin-top: 5rem;
+.footer { background: linear-gradient(rgba(0, 2, 1, 0.9), rgba(0, 0, 0, 0.8)), url('../../assets/background-stars.jpg') no-repeat top center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+padding-top: 5rem;
   &__item {
 font-size: .9rem;
  margin: 5px;
-    background-color: white;
     width: 75px;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -21,19 +22,18 @@ font-size: .9rem;
       border: 1px solid var(--primary-color);
     a{
       text-decoration: none;
-      color: inherit;
+      // color: inherit;
+      color:var(--white-color);
     }
-    transition: all  0.3s ease-in-out;
     &:hover,
     &:visited {
       cursor: pointer;
-    //  border: 1px solid  var(--secondary-color) ;
       color: var(--secondary-color);
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 7px 4px rgba(255, 255, 255, 0.4);
+
     }
     &:active {
     
-      background-color: var(--secondary-color);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       color: white;
     }

@@ -27,7 +27,7 @@ const Skills = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				Skills <span style={{ color: "black" }}>&</span> Experiences
+				Skills <span style={{ color: "skyblue" }}>&</span> Experiences
 			</h2>
 
 			<div className="app__skills-container">
@@ -41,7 +41,7 @@ const Skills = () => {
 						>
 							<div
 								className="app__flex"
-								style={{ backgroundColor: skill.bgColor }}
+								// style={{ backgroundColor: skill.bgColor }}
 							>
 								<img src={urlFor(skill.icon)} alt={skill.name} />
 							</div>
@@ -66,17 +66,17 @@ const Skills = () => {
 											data-for={work.name}
 											// key={index}
 										>
-											<h4 className="bold-text">{work.name}</h4>
-											<p className="p-text">{work.company}</p>
+											<h4 className="bold-text" >{work.name}</h4>
+											<p className="p-text"  style={{ color: "#DDA18F" }}>{work.company}</p>
 										</motion.div>
-										<ReactTooltip
+										{/* <ReactTooltip
 											id={work.name}
 											effect="solid"
 											arrowColor="#fff"
 											className="skills-tooltip"
 										>
 											{work.desc}
-										</ReactTooltip>
+										</ReactTooltip> */}
 									</div>
 								))}
 							</motion.div>
@@ -91,5 +91,5 @@ const Skills = () => {
 export default AppWrap(
 	MotionWrap(Skills, "app__skills"),
 	"skills",
-	"app__whitebg"
+	"app__specialbg"
 );

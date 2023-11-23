@@ -4,7 +4,7 @@ import {
 	Footer,
 	Header,
 	Skills,
-	Testimonials,
+	// Testimonials,
 	Work,
 	Contact,
 } from "./container";
@@ -19,7 +19,7 @@ function App() {
 			<About />
 			<Work />
 			<Skills />
-			<Testimonials />
+			{/* <Testimonials /> */}
 			<Contact />
 			<Footer />
 		</div>

@@ -105,5 +105,5 @@ const Contact = () => {
 export default AppWrap(
 	MotionWrap(Contact, "app__contact"),
 	"contact",
-	"app__whitebg"
+	"app__skybg"
 );

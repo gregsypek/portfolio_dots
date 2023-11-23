@@ -6,8 +6,8 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
 		<>
-			<footer>
-				<div className="footer">
+			<footer className="app__footer">
+				<div className="footer ">
 					<ul className="footer__list footer__list--primary">
 						<li className=" footer__item">
 							<a href="mailto:gregsypek@gmail.com" className="">
@@ -49,4 +49,4 @@ const Footer = () => {
 	);
 };
 
-export default MotionWrap(Footer, "app__footer");
+export default Footer;

@@ -10,6 +10,19 @@
     background-size: cover;
   
 }
+.app__specialbg {
+ 
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(5, 22, 39, 0.9), rgba(4, 8, 14, 0.8), rgb(1, 5, 0.9),  rgba(0, 0, 1, 0.8));
+
+    background-size: cover;
+  
+}
+.app__skybg {
+ 
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../src/assets/bg-planet.png') no-repeat center center ;
+    background-size: cover;
+  
+}
 
 .app__primarybg {
 

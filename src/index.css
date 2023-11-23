@@ -20,3 +20,7 @@
 	scroll-behavior: smooth;
 	/* border: 1px solid gray; */
 }
+
+body {
+	background-color: #040609;
+}

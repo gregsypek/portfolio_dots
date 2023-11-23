@@ -45,7 +45,8 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fef4f5;
+    // background-color: #fef4f5;
+    background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/planet.png') no-repeat center center ;
 
     img {
       width: 50%;
@@ -111,7 +112,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 1rem;
-    cursor: pointer;
+    // cursor: pointer;
 
     h4 {
       font-weight: 500;
