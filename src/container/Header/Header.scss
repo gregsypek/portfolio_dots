@@ -92,12 +92,15 @@ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../../
 		@media screen and (min-width: 800px) {
 			margin-top: 3rem;
 		}
+		h1 {
+			color:var(--white-color);
+		}
 
 		p {
 			width: 100%;
 			text-transform: uppercase;
 			text-align: center;
-					color: white;
+					color: var(--white-color);
 		}
 	}
 
