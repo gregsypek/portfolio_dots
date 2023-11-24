@@ -165,6 +165,8 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 3rem;
+
+
 		&-img {
 			width: 100%;
 			max-height: 520px;
@@ -183,13 +185,19 @@
 		text-align: center;
 		width: 100%;
 		max-width: 800px;
-		padding-block: 0.5rem;
+		// padding-block: 0.5rem;
+		padding:15px;
+	
 
 		h4 {
 			text-align: center;
 		}
 		p {
 			text-align: center;
+			height: 200px;
+		
+			overflow: scroll;
+		
 		}
 	}
 }

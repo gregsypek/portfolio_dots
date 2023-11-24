@@ -1,265 +1,314 @@
 .app {
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(5, 22, 39, 0.9), rgba(4, 8, 14, 0.8), rgb(1, 5, 0.9), rgb(41, 32, 27), rgba(32, 26, 23, 0.8));
-      background-size: cover;
-  font-family: var(--font-base);
+	background: linear-gradient(
+		rgba(0, 0, 0, 1),
+		rgba(5, 22, 39, 0.9),
+		rgba(4, 8, 14, 0.8),
+		rgb(1, 5, 0.9),
+		rgb(41, 32, 27),
+		rgba(32, 26, 23, 0.8)
+	);
+	background-size: cover;
+	font-family: var(--font-base);
 }
 
 .app__whitebg {
- 
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(5, 22, 39, 0.9), rgba(4, 8, 14, 0.8), rgb(1, 5, 0.9), rgb(41, 32, 27), rgba(32, 26, 23, 0.8));
-    background-size: cover;
-  
+	background: linear-gradient(
+		rgba(0, 0, 0, 1),
+		rgba(5, 22, 39, 0.9),
+		rgba(4, 8, 14, 0.8),
+		rgb(1, 5, 0.9),
+		rgb(41, 32, 27),
+		rgba(32, 26, 23, 0.8)
+	);
+	background-size: cover;
 }
 .app__specialbg {
- 
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(5, 22, 39, 0.9), rgba(4, 8, 14, 0.8), rgb(1, 5, 0.9),  rgba(0, 0, 1, 0.8));
+	background: linear-gradient(
+		rgba(0, 0, 0, 1),
+		rgba(5, 22, 39, 0.9),
+		rgba(4, 8, 14, 0.8),
+		rgb(1, 5, 0.9),
+		rgba(0, 0, 1, 0.8)
+	);
 
-    background-size: cover;
-  
+	background-size: cover;
 }
 .app__skybg {
- 
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../src/assets/bg-planet.png') no-repeat center center ;
-    background-size: cover;
-  
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+		url("../src/assets/bg-planet.png") no-repeat center center;
+	background-size: cover;
 }
 
 .app__primarybg {
-
-  background: linear-gradient(
-  rgba(32, 26, 23, 0.8),
-  rgb(41, 32, 27),
-  rgb(1, 5, 0.9),
-  rgba(4, 8, 14, 0.8),
-  rgba(5, 22, 39, 0.9),
-  rgba(0, 0, 0, 1)
-);
-background-size: cover;
+	background: linear-gradient(
+		rgba(32, 26, 23, 0.8),
+		rgb(41, 32, 27),
+		rgb(1, 5, 0.9),
+		rgba(4, 8, 14, 0.8),
+		rgba(5, 22, 39, 0.9),
+		rgba(0, 0, 0, 1)
+	);
+	background-size: cover;
 }
 
 .app__container {
-  width: 100%;
-  min-height: 100vh;
+	width: 100%;
+	min-height: 100vh;
 
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .app__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .app__wrapper {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
-  padding: 4rem 2rem;
+	flex: 1;
+	width: 100%;
+	flex-direction: column;
+	padding: 4rem 2rem;
 
-  @media screen and (max-width: 450px) {
-    padding: 3rem 1rem 2rem;
-  }
+	@media screen and (max-width: 450px) {
+		padding: 3rem 1rem 2rem;
+	}
 }
 
 .copyright {
-  width: 100%;
-  padding: 2rem 0 0;
+	width: 100%;
+	padding: 2rem 0 0;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
 
-  p {
-    text-transform: uppercase;
-    color: var(--black-color);
-  }
+	p {
+		text-transform: uppercase;
+		color: var(--black-color);
+	}
 }
 
 .head-text {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--white-color);
-  color: #E7DBDD;
-  text-transform: capitalize;
+	font-size: 2.75rem;
+	font-weight: 800;
+	text-align: center;
+	color: var(--white-color);
+	color: #e7dbdd;
+	text-transform: capitalize;
 
-  span {
-    color: var(--secondary-color);
-  }
+	span {
+		color: var(--secondary-color);
+	}
 
-  @media screen and (min-width: 2000px) {
-    font-size: 4rem;
-  }
+	@media screen and (min-width: 2000px) {
+		font-size: 4rem;
+	}
 
-  @media screen and (max-width: 450px) {
-    font-size: 2rem;
-  }
-  &--small {
-    font-size: 1rem;
-    width: 12vh;
-  }
-  &--black {
-color: var(--black-color);  }
-
+	@media screen and (max-width: 450px) {
+		font-size: 2rem;
+	}
+	&--small {
+		font-size: 1rem;
+		width: 12vh;
+	}
+	&--black {
+		color: var(--black-color);
+	}
 }
 
 .p-text {
-  font-size: 1rem;
-  text-align: left;
-  color: var(--white-color);
-  line-height: 1.5;
+	font-size: 1rem;
+	text-align: left;
+	color: var(--white-color);
+	line-height: 1.5;
 
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
-  }
-  @media screen and (min-width: 600px) {
-  font-size: 0.9rem;
-  }
-  &--center {
-    text-align: center;
-  }
-  &--small {
-    width: 25ch !important;
-  }
+	@media screen and (min-width: 2000px) {
+		font-size: 1.75rem;
+	}
+	@media screen and (min-width: 600px) {
+		font-size: 0.9rem;
+	}
+	&--center {
+		text-align: center;
+	}
+	&--small {
+		width: 25ch !important;
+	}
 }
 
 .bold-text {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: var(--black-color);
-  text-align: left;
+	font-size: 1.2rem;
+	font-weight: 800;
+	color: var(--black-color);
+	text-align: left;
 
-  @media screen and (min-width: 2000px) {
-    font-size: 2rem;
-  }
+	@media screen and (min-width: 2000px) {
+		font-size: 2rem;
+	}
 
-  @media screen and (max-width: 450px) {
-    font-size: 1rem;
-  }
+	@media screen and (max-width: 450px) {
+		font-size: 1rem;
+	}
 }
 
 .app__social {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-
-  padding: 1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
 
   div {
+    position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    // background-color: var(--white-color);
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.2)), url('./assets/small-planet.png') no-repeat center center ;
     margin: 0.25rem 0;
-    // border: 1px solid var(--lightGray-color);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transition: all 0.3s ease-in-out;
-
-    svg {
-      width: 18px;
-      height: 18px;
-      color: black
+    z-index: 2;
+    transition: right 0.3s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+    background-color: rgba(186, 182, 182, 0.909);
+  
+    &:hover::after {
+      content: "";
+      position: absolute;
+      right: -50px;
+      z-index: 1;
+      opacity: 1;
+      transition: right 0.3s ease-in-out;
     }
-
-    &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
-
-      svg {
-        color: #221913;
-        color: white;
-      }
+  
+    &:hover::before {
+      content: "";
+      position: absolute;
+      left: 90px;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out 0.1s  /* Dodanie opóźnienia 0.3s */
     }
+  
+    &::after {
+      content: "";
+      right: 50px;
+      opacity: 0;
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      background-color: hsla(0, 0%, 100%, 0.78);
+      // transition: left 0.6s ease-in-out; /* Opóźnienie 0.6s dla ::before */
 
-    @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
-
-      margin: 0.5rem 0;
-
-      svg {
-        width: 30px;
-        height: 30px;
-      }
     }
-  }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      left: 90px;
+      opacity:0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #b5acac8c;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.974);
+      // transition: right 0.3s ease-in-out; /* Opóźnienie 0.6s dla ::before */
+    }
+		svg {
+			width: 18px;
+			height: 18px;
+			color: black;
+		}
+
+		// &:hover {
+		//   background-color: var(--secondary-color);
+		//   border-color: var(--secondary-color);
+
+		//   // svg {
+		//   //   // color: #221913;
+		//   //   // color: white;
+		//   // }
+		// }
+
+		@media screen and (min-width: 2000px) {
+			width: 70px;
+			height: 70px;
+
+			margin: 0.5rem 0;
+
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
 }
 
 .app__navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
-  padding: 1rem;
+	padding: 1rem;
 
-  .app__navigation-dot {
-    // position: relative;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #b5acac;
-    margin: 0.5rem;
+	.app__navigation-dot {
+		// position: relative;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #b5acac;
+		margin: 0.5rem;
 
-    transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
 
-    &:hover {
-      background-color: var(--white-color);
-         box-shadow: 0px 15px 25px #fef4f5;
-    }
+		&:hover {
+			background-color: var(--white-color);
+			box-shadow: 0px 15px 25px #fef4f5;
+		}
 
-    @media screen and (min-width: 2000px) {
-      width: 20px;
-      height: 20px;
-    }
-    &.line {
-      position: relative;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Ustawiono pozycję na relative */
-      // width: 20px;
-      // height: 2px;
-      // background-color: #ffffff; /* Kolor biały */
-  
-      &::after {
-        /* Pseudoelement ::before dla dodatkowego elementu z boku */
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: -52px; /* Odległość od prawej strony */
-        width: 50px;
-        height: 1px;
-        background-color: hsla(0, 0%, 100%, 0.2); /* Kolor biały */
-      }
-      &::before {
-        /* Pseudoelement ::before dla dodatkowego elementu z boku */
-        content: "";
-        position: absolute;
-        left:-60px;
-        width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #b5acac8c; 
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-      }
-    }
-  }
+		@media screen and (min-width: 2000px) {
+			width: 20px;
+			height: 20px;
+		}
+		&.line {
+			position: relative;
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -52px; /* Odległość od prawej strony */
+				width: 50px;
+				height: 1px;
+				background-color: hsla(0, 0%, 100%, 0.2); /* Kolor biały */
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				left: -60px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #b5acac8c;
+				box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 500px) {
-
-  .app__navigation,
-  .app__social {
+	.app__navigation,
+	.app__social {
     display: none;
   }
 
-  .copyright {
-    padding: 2rem;
-  }
+	.copyright {
+		padding: 2rem;
+	}
 }

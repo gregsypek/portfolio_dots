@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // import { images } from "../../constants";
 
 import "./About.scss";
-import {  client } from "../../client";
+import { client } from "../../client";
 import { useEffect } from "react";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
@@ -28,23 +28,20 @@ const About = () => {
 							whileInView={{ opacity: 1 }}
 							whileHover={{ scale: 1.1 }}
 							transition={{ duration: 0.5, type: "tween" }}
-							className={`app__profile-item item-${index+1}`}
+							className={`app__profile-item item-${index + 1}`}
 							key={about.title + index}
-						>			 <div className="about__image" > 
-							{/* <img src={urlFor(about.imgUrl)} alt={about.title} style={{opacity:0}}/> */}
-							{/* <img src={urlFor(about.imgUrl)} alt={about.title} style={{opacity:0}}/> */}
-							<h2 className="bold-text" style={{ marginTop: 20 }}>
-								{/* <div style={{width:"400px", height:"300px"}}></div> */}
-								{about.title}
-							</h2>
-				
-<div className="text-container">
+						>
+							{" "}
+							<div className="about__image">						
+								<h2 className="bold-text" style={{ marginTop: 20 }}>									
+									{about.title}
+								</h2>
 
-							<p className="p-text" style={{ marginTop: 10 }}>
-								{about.description}
-							</p>
-</div>
-					
+								<div className="text-container">
+									<p className="p-text" style={{ marginTop: 10 }}>
+										{about.description}
+									</p>
+								</div>
 							</div>
 						</motion.div>
 					);
