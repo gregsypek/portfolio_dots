@@ -129,7 +129,8 @@
 		z-index: 5;
 		padding: 1rem;
 
-		width: 80%;
+
+		width: 80vw;
 		height: 100vh;
 z-index:100;
 		display: flex;
@@ -137,16 +138,18 @@ z-index:100;
 		align-items: flex-end;
 		flex-direction: column;
 
-		background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)),
-			url("../../assets/image-mars.png") no-repeat bottom center;
-		background-size: 80% auto; /* Zmniejsz szerokość obrazu do 80% szerokości kontenera i zachowaj proporcje */
-		background-position: 280% bottom; /* Przesuń obraz w prawo o 20% szerokości kontenera i do dołu */
-
-		background-color: black;
+		background-color: #020610;
 
 		/* top box shadow */
 		box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-
+		@media screen and (min-width: 600px) {
+			// background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)),
+			// url("../../assets/image-mars.png") no-repeat bottom center;
+			background-size: 80% auto; /* Zmniejsz szerokość obrazu do 80% szerokości kontenera i zachowaj proporcje */
+			background-position: 280% bottom; /* Przesuń obraz w prawo o 20% szerokości kontenera i do dołu */
+			background-color: #020610;
+			opacity:0.9
+		}
 		svg {
 			position: relative;
 			z-index: 101;

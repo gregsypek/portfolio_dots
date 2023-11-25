@@ -9,7 +9,7 @@ import { urlFor } from "../../client";
 // import { images } from "../../constants";
 function MyDialog({ project, onClose, isModalOpen }) {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+	const [maxLength, setMaxLength] = useState(100);
 	const handleNext = () => {
 		setCurrentImageIndex(
 			(prevIndex) => (prevIndex + 1) % project.imgUrls.length
@@ -21,6 +21,13 @@ function MyDialog({ project, onClose, isModalOpen }) {
 			(prevIndex) =>
 				(prevIndex - 1 + project.imgUrls.length) % project.imgUrls.length
 		);
+	};
+
+	const truncateText = (text, maxLength) => {
+		if (text.length > maxLength) {
+			return text.substring(0, maxLength) + "...";
+		}
+		return text;
 	};
 	useEffect(() => {
 		const handleKeyDown = (event) => {
@@ -109,11 +116,36 @@ function MyDialog({ project, onClose, isModalOpen }) {
 							<img src={images.ArrowRigth} alt="arrow right" className="icon" />
 						</button>
 					</div>
-					<div className="dialog__desc">
+					<div className="dialog__desc ">
 						<h4 className="bold-text">{project.title}</h4>
-						<p className="p-text" style={{ marginTop: 10 }}>
-							{project.description}
+
+						<p
+							className="p-text"
+							style={{
+								marginTop: 10,
+								display: "flex",
+								justifyContent: "flex-end",
+							}}
+						>
+							{truncateText(project.description, maxLength)}
 						</p>
+						<span
+							className="dialog__btn"
+							onClick={() => setMaxLength(project.description.length)}
+						>
+							{maxLength <= 100 ? (
+								<strong>More &rarr;</strong>
+							) : (
+								<strong
+									onClick={(e) => {
+										e.stopPropagation();
+										setMaxLength(100);
+									}}
+								>
+									&larr; Less
+								</strong>
+							)}
+						</span>
 					</div>
 				</div>
 			</Dialog>

@@ -22,7 +22,7 @@
 		display: flex;
 		inset: 0;
 		backdrop-filter: blur(2px);
-		background:black;
+		background: black;
 		// opacity: 0.3;
 		z-index: 9;
 		cursor: pointer;
@@ -32,58 +32,55 @@
 		flex: 1;
 		width: 100%;
 		border: 0;
-		padding-block:5px;
+		padding-block: 5px;
 		justify-content: space-between;
 	}
-  .dialog__links {
-    display: flex;
-       gap:2rem;
-  
-  }
-  .dialog__directions {
-    background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-block:10px;
-    padding-inline: 15px;
+	.dialog__links {
+		display: flex;
+		gap: 2rem;
+	}
+	.dialog__directions {
+		background-color: white;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		padding-block: 10px;
+		padding-inline: 15px;
 
-    gap:2rem;
-    display:flex;
-      @media (min-width: 680px) {
-        margin-top: -5rem;
-        }
-    button {
-      position:relative;
-      z-index: 1;
-    &::before {
-        content: "";
-        z-index: -1;
-        position: absolute;
-        inset: -10px;
-        opacity: 0;
-  
-      background-color: var(--primary-color);
-    
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        aspect-ratio: 1/1;
-      }
-  &:hover,
-    &:active {
-      &::before {
-        opacity: 1;
-      }
-  
-    }
-  
+		gap: 2rem;
+		display: flex;
+		@media (min-width: 680px) {
+			margin-top: -5rem;
+		}
+		button {
+			position: relative;
+			z-index: 1;
+			&::before {
+				content: "";
+				z-index: -1;
+				position: absolute;
+				inset: -10px;
+				opacity: 0;
 
-      &:disabled {
-        opacity:0.5;
-        cursor:not-allowed;
-      }   
-    }
-  }
+				background-color: var(--primary-color);
+
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				aspect-ratio: 1/1;
+			}
+			&:hover,
+			&:active {
+				&::before {
+					opacity: 1;
+				}
+			}
+
+			&:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+		}
+	}
 	.dialog__icon {
 		position: relative;
 		margin: 0;
@@ -102,7 +99,7 @@
 		}
 		&::before {
 			content: "";
-      z-index:-1;
+			z-index: -1;
 			position: absolute;
 			inset: -10px;
 			opacity: 0;
@@ -129,7 +126,8 @@
 
 		text-align: center;
 		// background-color: #fff;
-		background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/image-mars.png') no-repeat center center ;
+		background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)),
+			url("../../assets/image-mars.png") no-repeat center center;
 		border-radius: 0.5rem;
 		background-size: 20%;
 		background-position: 28% left;
@@ -166,14 +164,12 @@
 		justify-content: space-between;
 		gap: 3rem;
 
-
 		&-img {
 			width: 100%;
-			max-height: 520px;
-
+			max-height: 600px;
 			aspect-ratio: 16/9;
 			img {
-				max-height: 520px;
+				max-height: 350px;
 				width: 100%;
 				object-fit: contain;
 			}
@@ -186,18 +182,27 @@
 		width: 100%;
 		max-width: 800px;
 		// padding-block: 0.5rem;
-		padding:15px;
-	
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-items: flex-end;
+		height: 160px;
+		overflow: scroll;
 
 		h4 {
 			text-align: center;
 		}
 		p {
 			text-align: center;
-			height: 200px;
-		
-			overflow: scroll;
-		
+		}
+		span {
+			margin-top: 10px;
+			border: 1px solid white;
+			margin-top: 5px;
+			padding: 2px 6px;
+			width: 100px;
+			color: var(--white-color);
+			align-self: flex-end;
 		}
 	}
 }
