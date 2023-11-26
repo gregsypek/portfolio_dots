@@ -48,8 +48,8 @@ const Work = () => {
 	};
 	return (
 		<>
-			<h2 className="head-text head-text--black">
-				My <span>Websites </span> & <span> Apps</span>
+			<h2 className="head-text head-text--black empty">
+	My Websites  <span> &</span> Apps
 			</h2>
 
 			<div className="app__work-filter">

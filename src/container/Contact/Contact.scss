@@ -6,6 +6,15 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+  h2.empty {
+		text-shadow: 1px 0 #E7DBDD, -1px 0 #E7DBDD, 0 1px #E7DBDD, 0 -1px #E7DBDD, 1px 1px #E7DBDD,
+			-1px -1px #E7DBDD, 1px -1px #E7DBDD, -1px 1px #E7DBDD;
+		color: #000102 !important;
+		span {
+			text-shadow: none;
+		}
+  
+}
 }
 
 .app__contact-cards {

@@ -26,7 +26,7 @@ const Skills = () => {
 
 	return (
 		<>
-			<h2 className="head-text">
+			<h2 className="head-text empty">
 				Skills <span style={{ color: "skyblue" }}>&</span> Experiences
 			</h2>
 

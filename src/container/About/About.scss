@@ -2,6 +2,14 @@
 	flex: 1;
 	width: 100%;
 	flex-direction: column;
+	h2.empty {
+		text-shadow: 1px 0 #E7DBDD, -1px 0 #E7DBDD, 0 1px #E7DBDD, 0 -1px #E7DBDD, 1px 1px #E7DBDD,
+			-1px -1px #E7DBDD, 1px -1px #E7DBDD, -1px 1px #E7DBDD;
+		color: #051323 !important;
+		span {
+			text-shadow: none;
+		}
+	}
 }
 
 .app__profiles {
@@ -89,7 +97,9 @@
 	}
 	h2 {
 		margin-top: 10rem;
+		
 	}
+
 	@media screen and (min-width: 800px) {
 		width: 210px;
 		margin: 2rem;

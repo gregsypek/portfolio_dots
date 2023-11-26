@@ -38,7 +38,7 @@ const Contact = () => {
 	};
 	return (
 		<>
-			<h2 className="head-text">Drop me an email</h2>
+			<h2 className="head-text empty">Drop me an email</h2>
 			<div className="app__contact-cards">
 				<div className="app__contact-card">
 					{/* <img src={images.email} alt="email" /> */}

@@ -19,7 +19,7 @@ const About = () => {
 	}, []);
 	return (
 		<>
-			<h2 className="head-text">About me</h2>
+			<h2 className="head-text empty">About me</h2>
 			<div className="app__profiles">
 				{abouts.map((about, index) => {
 					console.log("about", about);
