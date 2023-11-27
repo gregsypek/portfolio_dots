@@ -174,6 +174,8 @@
     transition: right 0.3s ease-in-out;
     transition: opacity 0.6s ease-in-out;
     background-color: rgba(186, 182, 182, 0.909);
+		background-color: transparent;
+		border:1px solid var(--white-color);
   //line
     &:hover::after {
       content: "";
@@ -225,13 +227,22 @@
 			width: 18px;
 			height: 18px;
 			color: black;
+			color: var(--white-color);
 			position: inherit;
 			z-index: 10;
+			// cursor:pointer;
+		
 		}
+		
+		&:hover {
+			background-color:
+			 var(--white-color);
+			//  cursor:pointer;
+			& svg {
+				color: black;
 
-		// &:hover {
-		//   background-color: var(--secondary-color);
-		//   border-color: var(--secondary-color);
+			}
+		}
 
 		//   // svg {
 		//   //   // color: #221913;
