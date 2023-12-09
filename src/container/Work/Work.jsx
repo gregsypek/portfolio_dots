@@ -49,7 +49,7 @@ const Work = () => {
 	return (
 		<>
 			<h2 className="head-text head-text--black empty">
-	My Websites  <span> &</span> Apps
+				My Websites <span> &</span> Apps
 			</h2>
 
 			<div className="app__work-filter">
@@ -57,9 +57,11 @@ const Work = () => {
 					"All",
 					"JavaScript",
 					"React",
-					"Node",
+					// "Node",
+					"Php",
+					"Wordpress",
 					"Redux",
-					"Vue",			
+					// "Vue",
 					"Next",
 					"2023",
 					"2022",

@@ -28,8 +28,21 @@ const Footer = () => {
 							</a>
 						</li>
 						<li className="footer__item">
-							<a href="https://gregsypek.github.io/CV" className="">
-								CV
+							<a
+								href="https://gregsypek.github.io/CV"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								CV HTML
+							</a>
+						</li>
+						<li className="footer__item">
+							<a
+								href="/public/cv/CV_GRZEGORZ_SYPEK_P_2023.pdf"
+								download="CV_GRZEGORZ_SYPEK_P_2023.pdf"
+								rel="noopener noreferrer"
+							>
+								CV PDF
 							</a>
 						</li>
 						<li className="footer__item">
