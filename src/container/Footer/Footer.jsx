@@ -38,8 +38,8 @@ const Footer = () => {
 						</li>
 						<li className="footer__item">
 							<a
-								href="/cv/CV_GRZEGORZ_SYPEK_P_2023.pdf"
-								download="CV_GRZEGORZ_SYPEK_P_2023.pdf"
+								href="/cv/CV_GRZEGORZ_SYPEK_P_2024.pdf"
+								download="CV_GRZEGORZ_SYPEK_P_2024.pdf"
 								rel="noopener noreferrer"
 							>
 								CV PDF
