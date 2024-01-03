@@ -16,13 +16,15 @@
 .app__skills-container {
   width: 80%;
   margin-top: 3rem;
-
+gap:40px;
   display: flex;
   flex-direction: row;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     flex-direction: column;
+    align-items: center;
+  
   }
 }
 
@@ -32,13 +34,15 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  order:2;
 
-  margin-right: 5rem;
+  // margin-right: 5rem;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     margin-right: 0;
     justify-content: center;
     align-items: center;
+    // order:1;
   }
 }
 
@@ -51,24 +55,28 @@
   transition: all 0.3s ease-in-out;
 
   div {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     // background-color: #fef4f5;
     background: linear-gradient(rgba(162, 83, 83, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/planet.png') no-repeat center center ;
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 60%;
+      height: 60%;
     }
 
     &:hover {
       box-shadow: 0 0 25px #fef4f5;
     }
 
+    @media screen and (min-width: 1200px) {
+      width: 90px;
+      height: 90px;
+    }
     @media screen and (min-width: 2000px) {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
     }
 
     @media screen and (max-width: 450px) {
@@ -97,9 +105,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  order: 1;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     margin-top: 2rem;
+      justify-content: center;
+        align-items: center;
   }
 }
 
@@ -107,9 +118,13 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   margin: 1rem 0;
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  
+    }
 }
 
 .app__skills-exp-works {
@@ -131,6 +146,7 @@
       font-weight: 400;
       color: var(--gray-color);
       margin-top: 5px;
+      max-width: 600px;
     }
   }
 }

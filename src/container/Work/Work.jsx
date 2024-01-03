@@ -117,7 +117,7 @@ const Work = () => {
 										transition={{
 											duration: 0.25,
 										}}
-										className="app__flex"
+										className="app__flex app__eye"
 										onClick={() => handleModalOpen(work)}
 									>
 										<AiFillEye />

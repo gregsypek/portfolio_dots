@@ -187,6 +187,9 @@
 			}
 		}
 	}
+						.dialog__btn {
+							cursor: pointer;
+						}
 	.dialog__desc {
 		background-color: black;
 		border-radius: 10px;
@@ -216,5 +219,6 @@
 			color: var(--white-color);
 			align-self: flex-end;
 		}
+
 	}
 }
